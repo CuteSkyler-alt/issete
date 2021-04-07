@@ -1,18 +1,42 @@
-<html>
-<head>
+<html><head>
 <title>Issete - ICT Experts</title>
 </head>
 <body>
-<a><p>HELLO</p></a>
-</body>
+<a><p>issete</p></a>
+
 <style>
 @keyframes huh{
   0% {color: #ffffff};
   50% {color: #000000};
   100% {color: #ffffff};
 }
+
+@keyframes bg{
+    0% {background-color: #ff0000}
+    14% {background-color: #ffaa00}
+    28% {background-color: #ffff00}
+    42% {background-color: #00ff00}
+    56% {background-color: #0000ff}
+    70% {background-color: #ff00ff}
+    84% {background-color: #ffaaaa}
+    100% {background-color: #ff0000}
+}
+
+@keyframes ben{
+    0% {margin-left: 30%}
+    50% {margin-left: 42%}
+    100% {margin-left: 30%}
+}
+
+body{
+    animation: bg 11s infinite;
+}
+
 p{
-  animation: huh 2ms infinite
+  animation: ben 3s ease-in-out infinite;
+  font-size: 128px
 }
 </style>
+
+</body>
 </html>
