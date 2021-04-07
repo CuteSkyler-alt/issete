@@ -4,6 +4,8 @@
 <body>
 <a><p>issete</p></a>
 
+<img src="https://thumbs.dreamstime.com/z/happy-businessman-pointing-isolated-white-background-business-man-smiling-31649600.jpg" class="image">
+
 <style>
 @keyframes huh{
   0% {color: #ffffff};
@@ -28,15 +30,29 @@
     100% {margin-left: 30%}
 }
 
+@keyframes rotate{
+    0% {transform: rotateY(0deg);}
+    50% {transform: rotateY(180deg);}
+    100% {transform: rotateY(360deg);}
+}
+
+img.image{
+    transform: rotateY(180deg);
+    animation: rotate 4s linear infinite;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: -10%;
+}
+
 body{
     animation: bg 11s infinite;
 }
 
 p{
   animation: ben 3s ease-in-out infinite;
-  font-size: 128px
+  font-size: 128px;
+  width: 128px;
 }
 </style>
 
-</body>
-</html>
+</body></html>
